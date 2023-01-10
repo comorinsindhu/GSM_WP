@@ -35,7 +35,8 @@
 
 				</div>
 				<div class="main-nav collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
+					<?php wp_nav_menu( array( 'container' => false, 'menu' => 'SiteMenu',  'menu_class' => 'navbar-nav mr-auto' ) ); ?>
+					<!-- <ul class="navbar-nav mr-auto">
 
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-hover="dropdown" aria-expanded="false">
@@ -149,7 +150,7 @@
 								</li>
 							</ul>
 						</li>
-					</ul>
+					</ul> -->
 					<form name="searchForm" class="search-form form-inline my-2 my-lg-0">
 						<input name="search-for" class="search-for form-control mr-sm-0 rounded-0 border-right-0 gsm-border-individual" type="search" placeholder="What do you want to learn" aria-label="Search" />
 																																 

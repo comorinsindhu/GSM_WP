@@ -25,40 +25,26 @@
 			<div class="col-sm-12 col-md-4 footer-widget reset-padding">
 				<div class="row reset-margin">
 					<div class="footerpanelSocialicons d-none d-md-block">
+					<?php dynamic_sidebar( 'sidebar-4' ); ?>
 					
-					<a href="#" class="footer-socialicon-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin-in-footer.png" class="icon"></a>
-					<a href="#" class="footer-socialicon-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-square-footer.png"class="icon"></a>
 				</div>
 					<div class="footerpanelAboutContent">
-						<h2 class="footer-widget-title">GSM MASTER</h2>
-						<p class="about-description">Present in the mobile telephony market since 1999, GSM Master founded its training center at the end of 2014 with the aim of contributing to the standardization of the mobile product repair sector.</p>
-						<span class="footerpanelCopyright">© 2020 GSM Master. All rights reserved</span>
+						<?php dynamic_sidebar( 'sidebar-1' ); ?> 
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-4 footer-widget reset-padding">
 				<div>
-					<h2 class="footer-widget-title">FURTHER INFORMATION</h2>
-					<ul class="footer-menu">
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/">Privacy Policy</a></li>
-						<li><a href="/credits">Credits</a></li>
-						<li><a href="/cgug">CGUG</a></li>
-						<li><a href="/legal-notice">Legal Notice</a></li>
-						<li><a href="/sitemap">Plan du site</a></li>
-					</ul>
+					<?php dynamic_sidebar( 'sidebar-2' ); ?> 
+					
+					
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-4 footer-widget reset-padding">
 				<div>
-					<h2 class="footer-widget-title">SUBSCRIBE TO NEWSLETTER</h2>
-					<form name="newsletter-form" class="newsletter">
-						<div class="form-group">
-							<input type="email" class="form-control border-0 newsletter-email" id="" aria-describedby="emailHelp" placeholder="Enter your email address">
-					</div>
-					<button type="button" class="btn gsm-bg-individual btn-gsm-sm">Subscribe</button>
-					<span class="footerpanelSocialicons d-block d-md-none pull-right"><a href="#" class="footer-socialicon-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/awesome-facebook-square-mobile.png" class="icon"></a><a href="#" class="footer-socialicon-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin-in-footer-mobile.png"class="icon"></a></span>
-					</form>
+					<?php dynamic_sidebar( 'sidebar-3' ); ?> 
+					
+					
 				</div>
 			</div>
 		</div>

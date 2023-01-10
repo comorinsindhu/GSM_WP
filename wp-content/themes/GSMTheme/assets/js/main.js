@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    $('.site-navigation .dropdown .sub-menu').addClass('dropdown-menu');
+    $('.site-navigation .dropdown .sub-menu .sub-menu').addClass('drop-desc-list');
+    $('.site-navigation .dropdown .sub-menu .sub-menu').removeClass('dropdown-menu sub-menu');
+    $('.site-navigation .dropdown .sub-menu .nav-link.dropdown-toggle').addClass('drop-link');
+    $('.site-navigation .dropdown .sub-menu .nav-link.dropdown-toggle').removeClass('nav-link dropdown-toggle');
+    
+    
+    
     $(".site-navigation .dropdown").hover(
         function () {
             $(this).addClass("show");

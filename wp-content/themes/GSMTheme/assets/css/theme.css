@@ -648,7 +648,10 @@ a:hover{
 .main-nav .dropdown-menu li{
     margin-bottom:15px;
 }
-.main-nav .drop-link{
+.main-nav .sub-menu-toggle{
+    display:none;
+}
+.main-nav .dropdown-menu a{
     font-size: 16px;
     font-family: 'poppinssemibold';
     color:#3F589E;
@@ -680,6 +683,20 @@ a:hover{
 .drop-desc-img{
     width:208px;
     margin-top:21px;
+}
+
+ul.sub-menu.dropdown-menu li:after{
+    content:"";
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: #B5A4A4;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ul.sub-menu.dropdown-menu li li:after{
+    content:inherit;
 }
 hr.drop-option-seperator{
     width:160px;
@@ -1140,6 +1157,14 @@ footer{
     color:#3F589E;
     margin-bottom: 0;
 }
+.footerpanelSocialicons .widget_media_image{
+    display:inline-block;
+}
+
+
+
+
+
 .footerpanelSocialicons{
     writing-mode: vertical-rl;
     margin-top:21px;
@@ -1157,7 +1182,7 @@ footer{
     max-width: 88%;
     padding-left: 15px;
 }
-.footerpanelSocialicons .icon{
+.widget-content figure img{
     transform: rotate(0deg);
     -webkit-transform:rotate(0deg);
     -moz-transform:rotate(0deg);
@@ -1166,22 +1191,33 @@ footer{
     height:32px;
     vertical-align: bottom;
     margin-bottom: 7px;
+
 }
-.footer-widget-title{
+
+.widget-content h2{
     font-size: 26px;
     text-transform: uppercase;
     line-height: 46px;
     color:#3F589E;
     text-decoration: underline;
     margin:0 0 25px 0;
+
 }
-.about-description{
+.widget-content p{
     font-size: 12px;
     color:#3F589E;
     line-height: 18px;
     text-align: left;
     width: 198px;
 }
+
+
+
+
+
+
+
+
 .footerpanelCopyright{
     font-size: 11px;
     font-family: 'poppinsregular';
@@ -1190,23 +1226,34 @@ footer{
     margin: 0;
     padding-top: 4px;
 }
-.footer-menu{
+.widget_nav_menu nav ul{
     list-style: none;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
     margin-bottom: 0;
+
 }
-.footer-menu li{
+.widget_nav_menu nav ul.menu li{
     margin-bottom: 18px;
+
 }
-.footer-menu li a{
+.widget_nav_menu nav ul.menu li a{
     font-size: 20px;
     font-family: 'poppinsextralight';
     margin:0;
     color:#3F589E;
     line-height: 25px;
+
 }
+
+
+
+
+
+
+
+
 .newsletter button{
     border-radius: 6px;
 }
